@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { SalaComponent } from './sala/sala.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { SalasComponent } from './salas/salas.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SalasComponent } from './salas/salas.component';
     LoginComponent,
     SalaComponent,
     UsuariosComponent,
-    SalasComponent
+    SalasComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
