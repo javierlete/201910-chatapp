@@ -9,6 +9,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { SalasComponent } from './salas/salas.component';
 import { ChatComponent } from './chat/chat.component';
 import { FraseComponent } from './frase/frase.component';
+import { NuevaFraseComponent } from './nueva-frase/nueva-frase.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FraseComponent } from './frase/frase.component';
     UsuariosComponent,
     SalasComponent,
     ChatComponent,
-    FraseComponent
+    FraseComponent,
+    NuevaFraseComponent
   ],
   imports: [
     BrowserModule,
