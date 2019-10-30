@@ -7,7 +7,7 @@ import { SalaComponent } from './sala/sala.component';
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'salas/:id', component: SalaComponent }
+  { path: 'salas/:id/:nombre', component: SalaComponent }
 ];
 
 @NgModule({

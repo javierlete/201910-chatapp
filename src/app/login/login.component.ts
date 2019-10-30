@@ -16,6 +16,6 @@ export class LoginComponent implements OnInit {
   onLogin(nombre: string) {
     console.log(nombre);
 
-    this.router.navigate(['/salas/1']);
+    this.router.navigate(['/salas/1/' + nombre]);
   }
 }
