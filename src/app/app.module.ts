@@ -10,6 +10,7 @@ import { SalasComponent } from './salas/salas.component';
 import { ChatComponent } from './chat/chat.component';
 import { FraseComponent } from './frase/frase.component';
 import { NuevaFraseComponent } from './nueva-frase/nueva-frase.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NuevaFraseComponent } from './nueva-frase/nueva-frase.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
