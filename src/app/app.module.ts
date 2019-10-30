@@ -8,6 +8,7 @@ import { SalaComponent } from './sala/sala.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { SalasComponent } from './salas/salas.component';
 import { ChatComponent } from './chat/chat.component';
+import { FraseComponent } from './frase/frase.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChatComponent } from './chat/chat.component';
     SalaComponent,
     UsuariosComponent,
     SalasComponent,
-    ChatComponent
+    ChatComponent,
+    FraseComponent
   ],
   imports: [
     BrowserModule,
