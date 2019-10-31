@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Sala } from './sala';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ChatService {
 
-  private salas: Sala[] = [
-    { id: 1, nombre: 'Global' },
-    { id: 2, nombre: 'Privada 2' },
-    { id: 3, nombre: 'Privada 3' }
-  ];
+  private url = 'http://localhost:3000/';
+  private salasUrl = this.url + 'salas';
 
-  constructor() { }
+  private salas: Sala[];
+
+  constructor(private http: HttpClient) { }
 
   getSalas(): Observable<Sala[]> {
-    return of(this.salas);
+    return this.http.get<Sala[]>(this.salasUrl);
   }
 }
