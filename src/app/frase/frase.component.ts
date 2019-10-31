@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-frase',
@@ -11,9 +11,15 @@ export class FraseComponent implements OnInit {
   @Input() fecha: Date;
   @Input() texto: string;
 
+  @Output() pulsado = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onClick() {
+    console.log('FRASE', this.texto);
+    this.pulsado.emit(this.texto);
+  }
 }

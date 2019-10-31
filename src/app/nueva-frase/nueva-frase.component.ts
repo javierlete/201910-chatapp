@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-nueva-frase',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nueva-frase.component.css']
 })
 export class NuevaFraseComponent implements OnInit {
+
+  @Input() texto: string;
 
   constructor() { }
 
