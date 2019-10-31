@@ -1,0 +1,7 @@
+{
+    "salas": [
+        { "id": 1, "nombre": "Global" },
+        { "id": 2, "nombre": "Privada 2" },
+        { "id": 3, "nombre": "Privada 3" }
+    ]
+}
