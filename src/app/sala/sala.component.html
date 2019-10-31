@@ -1,4 +1,10 @@
-<h1>Sala {{id === 1 ? 'global' : id}} para {{nombre}}</h1>
-<app-chat></app-chat>
-<app-salas></app-salas>
-<app-usuarios></app-usuarios>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened position="start" fixedInViewport>
+        <app-salas></app-salas>
+        <app-usuarios></app-usuarios>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">Sala {{id === 1 ? 'global' : id}} para {{nombre}}</mat-toolbar>
+        <app-chat></app-chat>
+    </mat-sidenav-content>
+</mat-sidenav-container>
