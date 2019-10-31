@@ -1,5 +1,4 @@
 <mat-toolbar color="warm">Salas</mat-toolbar>
-<mat-nav-list>
-    <a mat-list-item routerLink="/salas/1/pendiente">Global</a>
-    <a mat-list-item routerLink="/salas/2/pendiente">Sala privada 2</a>
+<mat-nav-list *ngFor="let sala of salas">
+    <a mat-list-item routerLink="/salas/{{sala.id}}/pendiente">{{sala.nombre}}</a>
 </mat-nav-list>
